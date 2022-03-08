@@ -24,7 +24,7 @@ namespace jogo_rpg_de_estudo.Classes
             public string Descricao { get => descricao; set => descricao = value; }
 
             // Métodos
-            public virtual void UsarHabilidade(){
+            public virtual void Usar(){
                 
             }
         }
