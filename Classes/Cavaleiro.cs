@@ -11,32 +11,33 @@ namespace jogo_rpg_de_estudo.Classes
         // contrutor
         public Cavaleiro()
         {
-            this.Nome = "Tigo";
+            this.Nome = "Hércules";
             this.PontosDeVida = 100;
             this.NivelDoPersonagem = 26;
         }
 
-        // classe de habilidade
+        // classe de habilidade de cavaleiro
         public class HabilidadeDeCura : Habilidade
         {
-            private Cavaleiro cavaleiro;
-
-            HabilidadeDeCura()
+            
+            // construtores
+            public HabilidadeDeCura()
             {
                 Nome = "Cura do cavaleiro";
                 Descricao = "Cura a vida o cavaleiro em 20";
             }
 
-            public HabilidadeDeCura(Cavaleiro cavaleiro)
+            public HabilidadeDeCura(Personagem personagem)
             {
-                this.cavaleiro = cavaleiro;
-                this.cavaleiro.PontosDeVida += 20;
-
+                this.Personagem = personagem;
+                Nome = "Cura do cavaleiro";
+                Descricao = "Cura a vida o cavaleiro em 20";
             }
-
+            
+            // métodos
             public override void Usar()
             {
-
+                this.Personagem.PontosDeVida += 20;
             }
         }
 
