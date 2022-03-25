@@ -32,6 +32,11 @@ namespace jogo_rpg_de_estudo.Classes
             {
 
             }
+
+            public virtual void Usar(Personagem personagemAlvo){
+
+            }
+
         }
     }
 }
